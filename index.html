@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Soal Matematika SD - Pilihan Ganda Kompleks</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 20px; background-color: #f4f4f9; }
+        .quiz-container { background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #333; }
+        .question { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .question p { font-weight: bold; margin-bottom: 10px; }
+        .option { display: block; margin-bottom: 8px; cursor: pointer; }
+        .option input { margin-right: 10px; }
+        button { display: block; width: 100%; padding: 15px; background-color: #28a745; color: white; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; margin-top: 20px; }
+        button:hover { background-color: #218838; }
+        #result { margin-top: 20px; padding: 20px; border-radius: 5px; display: none; text-align: center; font-size: 20px; font-weight: bold; }
+        .correct-info { color: #666; font-size: 14px; font-weight: normal; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Latihan Soal Matematika</h1>
+    <p style="text-align: center;">Berilah tanda centang pada pernyataan yang kamu anggap <strong>BENAR</strong> (Jawaban bisa lebih dari satu).</p>
+    <hr>
+
+    <form id="quizForm">
+        <div class="question" data-ans="q1a,q1c">
+            <p>1. Budi bersepeda dari rumah ke sekolah. Ia menempuh jalan raya sejauh 4,5 km, kemudian masuk ke jalan kompleks sejauh 120 dam, dan terakhir berjalan kaki menuju kelas sejauh 300 m.</p>
+            <label class="option"><input type="checkbox" name="q1" value="q1a"> Jarak yang ditempuh Budi dengan bersepeda di jalan raya dan kompleks adalah 5,7 km.</label>
+            <label class="option"><input type="checkbox" name="q1" value="q1b"> Jarak dari jalan kompleks hingga sampai di kelas adalah 1.500 m.</label>
+            <label class="option"><input type="checkbox" name="q1" value="q1c"> Total jarak yang ditempuh Budi dari rumah ke kelas adalah 6.000 m.</label>
+        </div>
+
+        <div class="question" data-ans="q2b,q2c">
+            <p>2. Seekor siput berlomba lari. Pada jam pertama ia menempuh 0,05 km. Jam kedua ia menempuh 400 dm, dan jam ketiga ia menempuh 2.000 cm.</p>
+            <label class="option"><input type="checkbox" name="q2" value="q2a"> Jarak pada jam pertama dan kedua jika dijumlahkan adalah 90 m.</label>
+            <label class="option"><input type="checkbox" name="q2" value="q2b"> Jarak pada jam ketiga setara dengan 20 m.</label>
+            <label class="option"><input type="checkbox" name="q2" value="q2c"> Total jarak yang ditempuh siput selama 3 jam adalah 110 m.</label>
+        </div>
+
+        <div class="question" data-ans="q3a,q3c">
+            <p>3. Dina memiliki tiga utas pita. Pita merah panjangnya 2,4 m, pita biru 15 dm, dan pita kuning 80 cm.</p>
+            <label class="option"><input type="checkbox" name="q3" value="q3a"> Panjang pita merah dan biru jika disambung adalah 390 cm.</label>
+            <label class="option"><input type="checkbox" name="q3" value="q3b"> Pita biru lebih pendek daripada pita kuning.</label>
+            <label class="option"><input type="checkbox" name="q3" value="q3c"> Total panjang seluruh pita Dina adalah 4,7 m.</label>
+        </div>
+
+        <div class="question" data-ans="q4a,q4b,q4c">
+            <p>4. Ibu membeli belanjaan di pasar: 2,5 kg beras, 15 hg telur, dan 500 gram bawang merah.</p>
+            <label class="option"><input type="checkbox" name="q4" value="q4a"> Berat beras dan telur jika digabung adalah 4 kg.</label>
+            <label class="option"><input type="checkbox" name="q4" value="q4b"> Bawang merah merupakan belanjaan yang paling ringan.</label>
+            <label class="option"><input type="checkbox" name="q4" value="q4c"> Total berat belanjaan Ibu adalah 45 hg.</label>
+        </div>
+
+        <div class="question" data-ans="q5a,q5b,q5c">
+            <p>5. Sebuah truk pengangkut buah membawa 1,2 kwintal apel dan 85 kg jeruk. Kapasitas maksimal truk tersebut adalah 250 kg. Sopir ingin menambah muatan melon.</p>
+            <label class="option"><input type="checkbox" name="q5" value="q5a"> Total berat apel dan jeruk yang sudah ada di truk adalah 205 kg.</label>
+            <label class="option"><input type="checkbox" name="q5" value="q5b"> Berat apel setara dengan 1.200 hg.</label>
+            <label class="option"><input type="checkbox" name="q5" value="q5c"> Berat maksimal melon yang masih boleh dimuat adalah 45 kg.</label>
+        </div>
+
+        <div class="question" data-ans="q6a,q6b,q6c">
+            <p>6. Seorang pendaki membawa tas carrier dengan beban: air minum 2.000 gram, logistik 30 hg, dan perlengkapan tidur 1,5 kg.</p>
+            <label class="option"><input type="checkbox" name="q6" value="q6a"> Berat air minum dan perlengkapan tidur adalah 3,5 kg.</label>
+            <label class="option"><input type="checkbox" name="q6" value="q6b"> Berat logistik setara dengan 3 kg.</label>
+            <label class="option"><input type="checkbox" name="q6" value="q6c"> Total beban yang dibawa pendaki tersebut adalah 6.500 gram.</label>
+        </div>
+
+        <div class="question" data-ans="q7a,q7b,q7c">
+            <p>7. Sebuah taman berbentuk segitiga sama kaki memiliki panjang sisi miring 10 m dan tinggi 8 m. Luas tanah tersebut adalah 48 m².</p>
+            <label class="option"><input type="checkbox" name="q7" value="q7a"> Panjang alas segitiga tersebut adalah 12 m.</label>
+            <label class="option"><input type="checkbox" name="q7" value="q7b"> Keliling taman yang akan dipasangi pagar adalah 32 m.</label>
+            <label class="option"><input type="checkbox" name="q7" value="q7c"> Jika harga kawat Rp10.000/meter, biaya yang dibutuhkan adalah Rp320.000.</label>
+        </div>
+
+        <div class="question" data-ans="q8a,q8b,q8c">
+            <p>8. Pak Ali memiliki kolam berbentuk segitiga siku-siku dengan panjang sisi tegak 9 m dan 12 m. Sisi miringnya adalah 15 m. Di sekeliling kolam akan diletakkan pot bunga dengan jarak antar pot 3 m.</p>
+            <label class="option"><input type="checkbox" name="q8" value="q8a"> Luas kolam Pak Ali adalah 54 m².</label>
+            <label class="option"><input type="checkbox" name="q8" value="q8b"> Keliling kolam tersebut adalah 36 m.</label>
+            <label class="option"><input type="checkbox" name="q8" value="q8c"> Banyaknya pot bunga yang dibutuhkan adalah 12 buah.</label>
+        </div>
+
+        <div class="question" data-ans="q9a,q9b,q9c">
+            <p>9. Sebuah lapangan berbentuk segitiga sama sisi dengan panjang sisi 20 m. Seorang pelari mengelilingi lapangan tersebut sebanyak 5 kali.</p>
+            <label class="option"><input type="checkbox" name="q9" value="q9a"> Jarak satu kali putaran lapangan adalah 60 m.</label>
+            <label class="option"><input type="checkbox" name="q9" value="q9b"> Total jarak yang ditempuh pelari adalah 0,3 km.</label>
+            <label class="option"><input type="checkbox" name="q9" value="q9c"> Jika pelari menambah 2 putaran lagi, total jaraknya menjadi 420 m.</label>
+        </div>
+
+        <div class="question" data-ans="q10a,q10b,q10c">
+            <p>10. Pak Rahmat ingin menanam pohon pinus di sekeliling kebun segitiganya. Keliling kebun tersebut adalah 45 m. Jarak antar pohon adalah 1,5 m.</p>
+            <label class="option"><input type="checkbox" name="q10" value="q10a"> Jika salah satu sisi segitiga sama sisi tersebut adalah 15 m, maka kelilingnya benar 45 m.</label>
+            <label class="option"><input type="checkbox" name="q10" value="q10b"> Jumlah pohon pinus yang dibutuhkan adalah 30 pohon.</label>
+            <label class="option"><input type="checkbox" name="q10" value="q10c"> Jika jarak antar pohon diperlebar menjadi 3 m, maka pohon yang dibutuhkan berkurang setengahnya.</label>
+        </div>
+
+        <button type="button" onclick="calculateScore()">Kirim Jawaban</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateScore() {
+        const questions = document.querySelectorAll('.question');
+        let totalScore = 0;
+        const totalQuestions = questions.length;
+
+        questions.forEach((q) => {
+            const correctAnswers = q.getAttribute('data-ans').split(',');
+            const checkedBoxes = q.querySelectorAll('input[type="checkbox"]:checked');
+            const checkedValues = Array.from(checkedBoxes).map(cb => cb.value);
+
+            // Cek apakah pilihan yang dicentang sama persis dengan kunci jawaban
+            const isCorrect = checkedValues.length === correctAnswers.length && 
+                              checkedValues.every(val => correctAnswers.includes(val));
+
+            if (isCorrect) {
+                totalScore += 10; // Setiap soal bobotnya 10
+            }
+        });
+
+        const resultDiv = document.getElementById('result');
+        resultDiv.style.display = 'block';
+        resultDiv.style.backgroundColor = totalScore >= 70 ? '#d4edda' : '#f8d7da';
+        resultDiv.style.color = totalScore >= 70 ? '#155724' : '#721c24';
+        resultDiv.innerHTML = `Skor Anda: ${totalScore} / 100`;
+        
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+</script>
+
+</body>
+</html>
